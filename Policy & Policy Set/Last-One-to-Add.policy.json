@@ -1,0 +1,23 @@
+{
+  "policy": {
+    "Last One to Add": {
+      "_id": "Last One to Add",
+      "actionValues": {},
+      "active": true,
+      "applicationName": "AnotherPolicySet",
+      "createdBy": "id=amadmin,ou=user,ou=am-config",
+      "creationDate": "2024-10-25T21:06:46.455Z",
+      "description": "",
+      "lastModifiedBy": "id=amadmin,ou=user,ou=am-config",
+      "lastModifiedDate": "2024-10-25T21:06:46.455Z",
+      "name": "Last One to Add",
+      "resourceTypeUuid": "76656a38-5f8e-401b-83aa-4ccb74ce88d2",
+      "resources": [
+        "*://*:*/*?yello"
+      ],
+      "subject": {
+        "type": "NONE"
+      }
+    }
+  }
+}

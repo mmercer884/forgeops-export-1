@@ -1,0 +1,44 @@
+{
+  "policy": {
+    "Another": {
+      "_id": "Another",
+      "actionValues": {
+        "DELETE": true
+      },
+      "active": true,
+      "applicationName": "AnotherPolicySet",
+      "condition": {
+        "maxSessionTime": 100,
+        "terminateSession": false,
+        "type": "Session"
+      },
+      "createdBy": "id=amadmin,ou=user,ou=am-config",
+      "creationDate": "2024-10-25T21:02:06.772Z",
+      "description": "Desc",
+      "lastModifiedBy": "id=amadmin,ou=user,ou=am-config",
+      "lastModifiedDate": "2024-10-25T22:25:33.407Z",
+      "name": "Another",
+      "resourceAttributes": [
+        {
+          "propertyName": "Test",
+          "propertyValues": [
+            "TestAnother"
+          ],
+          "type": "Static"
+        },
+        {
+          "propertyName": "assignedDashboard",
+          "propertyValues": [],
+          "type": "User"
+        }
+      ],
+      "resourceTypeUuid": "76656a38-5f8e-401b-83aa-4ccb74ce88d2",
+      "resources": [
+        "*://*:*/*?*"
+      ],
+      "subject": {
+        "type": "NONE"
+      }
+    }
+  }
+}

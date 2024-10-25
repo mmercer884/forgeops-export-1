@@ -1,0 +1,61 @@
+{
+  "policy": {
+    "Another": {
+      "_id": "Another",
+      "actionValues": {
+        "DELETE": true,
+        "GET": false,
+        "OPTIONS": true,
+        "PATCH": false
+      },
+      "active": true,
+      "applicationName": "AnotherPolicySet",
+      "condition": {
+        "conditions": [
+          {
+            "maxSessionTime": 100,
+            "terminateSession": false,
+            "type": "Session"
+          },
+          {
+            "dnsName": [
+              "trivir.com"
+            ],
+            "endIp": "8.8.8.124",
+            "ipRange": [],
+            "startIp": "8.8.8.8",
+            "type": "IPv4"
+          }
+        ],
+        "type": "AND"
+      },
+      "createdBy": "id=amadmin,ou=user,ou=am-config",
+      "creationDate": "2024-10-25T21:02:06.772Z",
+      "description": "Desc",
+      "lastModifiedBy": "id=amadmin,ou=user,ou=am-config",
+      "lastModifiedDate": "2024-10-25T21:08:45.718Z",
+      "name": "Another",
+      "resourceAttributes": [
+        {
+          "propertyName": "Test",
+          "propertyValues": [
+            "TestAnother"
+          ],
+          "type": "Static"
+        },
+        {
+          "propertyName": "assignedDashboard",
+          "propertyValues": [],
+          "type": "User"
+        }
+      ],
+      "resourceTypeUuid": "76656a38-5f8e-401b-83aa-4ccb74ce88d2",
+      "resources": [
+        "*://*:*/*?*"
+      ],
+      "subject": {
+        "type": "NONE"
+      }
+    }
+  }
+}

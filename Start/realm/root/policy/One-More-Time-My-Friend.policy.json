@@ -1,0 +1,23 @@
+{
+  "policy": {
+    "One More Time My Friend": {
+      "_id": "One More Time My Friend",
+      "actionValues": {},
+      "active": true,
+      "applicationName": "AnotherPolicySet",
+      "createdBy": "id=amadmin,ou=user,ou=am-config",
+      "creationDate": "2024-10-25T22:25:33.422Z",
+      "description": "",
+      "lastModifiedBy": "id=amadmin,ou=user,ou=am-config",
+      "lastModifiedDate": "2024-10-25T22:25:33.422Z",
+      "name": "One More Time My Friend",
+      "resourceTypeUuid": "76656a38-5f8e-401b-83aa-4ccb74ce88d2",
+      "resources": [
+        "*://*:*/*"
+      ],
+      "subject": {
+        "type": "NONE"
+      }
+    }
+  }
+}
