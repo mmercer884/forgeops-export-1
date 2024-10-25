@@ -1,0 +1,14 @@
+{
+  "_id": "servletfilter/upload",
+  "classPathURLs": [],
+  "filterClass": "org.forgerock.openidm.jetty.LargePayloadServletFilter",
+  "initParams": {
+    "maxRequestSizeInMegabytes": 50
+  },
+  "requestAttributes": {},
+  "scriptExtensions": {},
+  "systemProperties": {},
+  "urlPatterns": [
+    "&{openidm.servlet.upload.alias}/*"
+  ]
+}

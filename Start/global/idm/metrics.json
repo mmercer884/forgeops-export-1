@@ -1,0 +1,5 @@
+{
+  "_id": "metrics",
+  "enabled": true,
+  "prometheusRole": "&{openidm.prometheus.role}"
+}

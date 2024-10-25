@@ -1,0 +1,18 @@
+{
+  "script": {
+    "7a624f75-6f04-4982-889c-2998695ed91e": {
+      "_id": "7a624f75-6f04-4982-889c-2998695ed91e",
+      "context": "AUTHENTICATION_TREE_DECISION_NODE",
+      "createdBy": "null",
+      "creationDate": 0,
+      "default": false,
+      "description": "changed this ",
+      "evaluatorVersion": "2.0",
+      "language": "JAVASCRIPT",
+      "lastModifiedBy": "null",
+      "lastModifiedDate": 0,
+      "name": "Placeholder change",
+      "script": "file://Placeholder-change.script.js"
+    }
+  }
+}

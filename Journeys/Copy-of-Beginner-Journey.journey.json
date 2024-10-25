@@ -1,0 +1,108 @@
+{
+  "trees": {
+    "Copy of Beginner Journey": {
+      "circlesOfTrust": {},
+      "emailTemplates": {},
+      "innerNodes": {
+        "3e61869e-cbd7-4533-89cf-1abadda5e5dc": {
+          "_id": "3e61869e-cbd7-4533-89cf-1abadda5e5dc",
+          "_outcomes": [
+            {
+              "displayName": "Outcome",
+              "id": "outcome"
+            }
+          ],
+          "_type": {
+            "_id": "PasswordCollectorNode",
+            "collection": true,
+            "name": "Password Collector"
+          }
+        },
+        "5ce7f704-2baa-4636-b8db-d40b7916ad37": {
+          "_id": "5ce7f704-2baa-4636-b8db-d40b7916ad37",
+          "_outcomes": [
+            {
+              "displayName": "Outcome",
+              "id": "outcome"
+            }
+          ],
+          "_type": {
+            "_id": "UsernameCollectorNode",
+            "collection": true,
+            "name": "Username Collector"
+          }
+        }
+      },
+      "nodes": {
+        "df1a003f-8ce2-40e8-81aa-5e6d67299ecc": {
+          "_id": "df1a003f-8ce2-40e8-81aa-5e6d67299ecc",
+          "_outcomes": [
+            {
+              "displayName": "Outcome",
+              "id": "outcome"
+            }
+          ],
+          "_type": {
+            "_id": "PageNode",
+            "collection": true,
+            "name": "Page Node"
+          },
+          "nodes": [
+            {
+              "_id": "5ce7f704-2baa-4636-b8db-d40b7916ad37",
+              "displayName": "Username Collector",
+              "nodeType": "UsernameCollectorNode"
+            },
+            {
+              "_id": "3e61869e-cbd7-4533-89cf-1abadda5e5dc",
+              "displayName": "Password Collector",
+              "nodeType": "PasswordCollectorNode"
+            }
+          ],
+          "pageDescription": {},
+          "pageHeader": {}
+        }
+      },
+      "saml2Entities": {},
+      "scripts": {},
+      "socialIdentityProviders": {},
+      "themes": [],
+      "tree": {
+        "_id": "Copy of Beginner Journey",
+        "description": "hello world",
+        "enabled": true,
+        "entryNodeId": "df1a003f-8ce2-40e8-81aa-5e6d67299ecc",
+        "identityResource": "managed/user",
+        "innerTreeOnly": false,
+        "nodes": {
+          "df1a003f-8ce2-40e8-81aa-5e6d67299ecc": {
+            "connections": {
+              "outcome": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+            },
+            "displayName": "Page Node",
+            "nodeType": "PageNode",
+            "x": 168,
+            "y": 144.76666259765625
+          }
+        },
+        "staticNodes": {
+          "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+            "x": 507,
+            "y": 43
+          },
+          "e301438c-0bd0-429c-ab0c-66126501069a": {
+            "x": 500,
+            "y": 350
+          },
+          "startNode": {
+            "x": 50,
+            "y": 250
+          }
+        },
+        "uiConfig": {
+          "categories": "[]"
+        }
+      }
+    }
+  }
+}
