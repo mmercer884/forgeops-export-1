@@ -1,0 +1,19 @@
+{
+  "resourcetype": {
+    "a0631e56-a146-4505-b089-f4e59f27cfbe": {
+      "actions": {
+        "get": true
+      },
+      "createdBy": "id=amadmin,ou=user,ou=am-config",
+      "creationDate": 1730142179943,
+      "description": "",
+      "lastModifiedBy": "id=amadmin,ou=user,ou=am-config",
+      "lastModifiedDate": 1730142179943,
+      "name": "AddType",
+      "patterns": [
+        "//i/iop"
+      ],
+      "uuid": "a0631e56-a146-4505-b089-f4e59f27cfbe"
+    }
+  }
+}

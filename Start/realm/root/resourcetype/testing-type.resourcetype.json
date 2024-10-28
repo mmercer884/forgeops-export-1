@@ -1,0 +1,19 @@
+{
+  "resourcetype": {
+    "a9b20196-7989-4d54-979a-1a1538757209": {
+      "actions": {
+        "TestingType": true
+      },
+      "createdBy": "id=amadmin,ou=user,ou=am-config",
+      "creationDate": 1730139418738,
+      "description": "",
+      "lastModifiedBy": "id=amadmin,ou=user,ou=am-config",
+      "lastModifiedDate": 1730142180002,
+      "name": "testing type",
+      "patterns": [
+        "testingType"
+      ],
+      "uuid": "a9b20196-7989-4d54-979a-1a1538757209"
+    }
+  }
+}

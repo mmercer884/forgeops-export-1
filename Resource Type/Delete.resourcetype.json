@@ -1,0 +1,19 @@
+{
+  "resourcetype": {
+    "0c20fecf-6a17-446c-95ad-3704d1e920df": {
+      "actions": {
+        "delete": true
+      },
+      "createdBy": "id=amadmin,ou=user,ou=am-config",
+      "creationDate": 1730141745078,
+      "description": "",
+      "lastModifiedBy": "id=amadmin,ou=user,ou=am-config",
+      "lastModifiedDate": 1730141745078,
+      "name": "Delete",
+      "patterns": [
+        "delete"
+      ],
+      "uuid": "0c20fecf-6a17-446c-95ad-3704d1e920df"
+    }
+  }
+}
