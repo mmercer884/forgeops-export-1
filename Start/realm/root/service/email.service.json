@@ -1,0 +1,35 @@
+{
+  "service": {
+    "email": {
+      "_id": "",
+      "_type": {
+        "_id": "email",
+        "collection": false,
+        "name": "Email Service"
+      },
+      "emailAddressAttribute": "mail",
+      "emailImplClassName": "org.forgerock.openam.services.email.MailServerImpl",
+      "emailRateLimitSeconds": 1,
+      "from": "email@trivir.com",
+      "location": "/",
+      "nextDescendents": [
+        {
+          "_id": "smtp",
+          "_type": {
+            "_id": "smtpTransports",
+            "collection": true,
+            "name": "SMTP"
+          },
+          "emailImplClassName": "org.forgerock.openam.services.email.MailServerImpl",
+          "hostname": "smtp.dev.trivir.com",
+          "port": 465,
+          "sslState": "SSL",
+          "username": "root"
+        }
+      ],
+      "port": 465,
+      "sslState": "SSL",
+      "transportType": "[Empty]"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "idp": {
+    "fbooo": {
+      "_id": "fbooo",
+      "_type": {
+        "_id": "facebookConfig",
+        "collection": true,
+        "name": "Client configuration for Facebook."
+      },
+      "authenticationIdKey": "id",
+      "authorizationEndpoint": "https://www.facebook.com/dialog/oauth",
+      "clientAuthenticationMethod": "CLIENT_SECRET_POST",
+      "clientId": "fbook",
+      "enabled": true,
+      "introspectEndpoint": "https://graph.facebook.com/debug_token",
+      "issuerComparisonCheckType": "EXACT",
+      "jwtEncryptionAlgorithm": "NONE",
+      "jwtEncryptionMethod": "NONE",
+      "jwtSigningAlgorithm": "NONE",
+      "pkceMethod": "S256",
+      "privateKeyJwtExpTime": 600,
+      "redirectURI": "https://test.com",
+      "responseMode": "DEFAULT",
+      "revocationCheckOptions": [],
+      "scopeDelimiter": " ",
+      "scopes": [
+        "email",
+        "user_birthday"
+      ],
+      "tokenEndpoint": "https://graph.facebook.com/v2.7/oauth/access_token",
+      "transform": "bae1d54a-e97d-4997-aa5d-c027f21af82c",
+      "uiConfig": {
+        "buttonClass": "fa-facebook-official",
+        "buttonCustomStyle": "background-color: #3b5998;border-color: #3b5998; color: white;",
+        "buttonCustomStyleHover": "background-color: #334b7d;border-color: #334b7d; color: white;",
+        "buttonDisplayName": "Facebook",
+        "buttonImage": "",
+        "iconBackground": "#3b5998",
+        "iconClass": "fa-facebook",
+        "iconFontColor": "white"
+      },
+      "useCustomTrustStore": false,
+      "userInfoEndpoint": "https://graph.facebook.com/me?fields=id,name,picture,email,first_name,last_name,locale"
+    }
+  }
+}

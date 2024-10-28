@@ -52,7 +52,6 @@
             "openam-idrepo-ldapv3-contains-iot-identities-enriched-as-oauth2client": false,
             "openam-idrepo-ldapv3-heartbeat-interval": 10,
             "openam-idrepo-ldapv3-heartbeat-timeunit": "SECONDS",
-            "openam-idrepo-ldapv3-keepalive-searchbase": "",
             "openam-idrepo-ldapv3-keepalive-searchfilter": "(objectclass=*)",
             "openam-idrepo-ldapv3-mtls-enabled": false,
             "openam-idrepo-ldapv3-proxied-auth-denied-fallback": false,

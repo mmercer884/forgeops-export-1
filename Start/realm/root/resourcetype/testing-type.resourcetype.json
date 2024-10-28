@@ -5,10 +5,10 @@
         "TestingType": true
       },
       "createdBy": "id=amadmin,ou=user,ou=am-config",
-      "creationDate": 1730139418738,
+      "creationDate": 1730143366114,
       "description": "",
       "lastModifiedBy": "id=amadmin,ou=user,ou=am-config",
-      "lastModifiedDate": 1730142180002,
+      "lastModifiedDate": 1730143366114,
       "name": "testing type",
       "patterns": [
         "testingType"

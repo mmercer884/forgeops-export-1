@@ -1,0 +1,15 @@
+{
+  "_id": "sync",
+  "mappings": [
+    "file://managedRole_managedAssignment.sync.json",
+    "file://managedAssignment_managedUser.sync.json"
+  ],
+  "meta": {
+    "exportDate": "2024-10-28T21:48:59.673Z",
+    "exportTool": "frodo",
+    "exportToolVersion": "v2.2.0 [v20.11.1]",
+    "exportedBy": "amadmin",
+    "origin": "https://golden1-platform.dev.trivir.com/am",
+    "originAmVersion": "7.5.0"
+  }
+}

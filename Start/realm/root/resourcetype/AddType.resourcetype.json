@@ -5,10 +5,10 @@
         "get": true
       },
       "createdBy": "id=amadmin,ou=user,ou=am-config",
-      "creationDate": 1730142179943,
+      "creationDate": 1730143366113,
       "description": "",
       "lastModifiedBy": "id=amadmin,ou=user,ou=am-config",
-      "lastModifiedDate": 1730142179943,
+      "lastModifiedDate": 1730143366113,
       "name": "AddType",
       "patterns": [
         "//i/iop"

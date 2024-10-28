@@ -22,6 +22,7 @@
           "authorizationEndpoint": "https://accounts.google.com/o/oauth2/v2/auth",
           "clientAuthenticationMethod": "CLIENT_SECRET_POST",
           "clientId": "goo",
+          "clientSecretLabelIdentifier": "change",
           "enableNativeNonce": true,
           "enabled": true,
           "encryptJwtRequestParameter": false,
@@ -61,18 +62,17 @@
           "wellKnownEndpoint": "https://accounts.google.com/.well-known/openid-configuration"
         },
         {
-          "_id": "fbooo",
+          "_id": "Micro",
           "_type": {
-            "_id": "facebookConfig",
+            "_id": "microsoftConfig",
             "collection": true,
-            "name": "Client configuration for Facebook."
+            "name": "Client configuration for Microsoft."
           },
           "authenticationIdKey": "id",
-          "authorizationEndpoint": "https://www.facebook.com/dialog/oauth",
+          "authorizationEndpoint": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
           "clientAuthenticationMethod": "CLIENT_SECRET_POST",
-          "clientId": "fbook",
+          "clientId": "micro",
           "enabled": true,
-          "introspectEndpoint": "https://graph.facebook.com/debug_token",
           "issuerComparisonCheckType": "EXACT",
           "jwtEncryptionAlgorithm": "NONE",
           "jwtEncryptionMethod": "NONE",
@@ -84,23 +84,22 @@
           "revocationCheckOptions": [],
           "scopeDelimiter": " ",
           "scopes": [
-            "email",
-            "user_birthday"
+            "User.Read"
           ],
-          "tokenEndpoint": "https://graph.facebook.com/v2.7/oauth/access_token",
-          "transform": "bae1d54a-e97d-4997-aa5d-c027f21af82c",
+          "tokenEndpoint": "https://login.microsoftonline.com/common/oauth2/v2.0/token",
+          "transform": "73cecbfc-dad0-4395-be6a-6858ee3a80e5",
           "uiConfig": {
-            "buttonClass": "fa-facebook-official",
-            "buttonCustomStyle": "background-color: #3b5998;border-color: #3b5998; color: white;",
-            "buttonCustomStyleHover": "background-color: #334b7d;border-color: #334b7d; color: white;",
-            "buttonDisplayName": "Facebook",
-            "buttonImage": "",
-            "iconBackground": "#3b5998",
-            "iconClass": "fa-facebook",
+            "buttonClass": "",
+            "buttonCustomStyle": "background-color: #fff; border-color: #8b8b8b; color: #8b8b8b;",
+            "buttonCustomStyleHover": "background-color: #fff; border-color: #8b8b8b; color: #8b8b8b;",
+            "buttonDisplayName": "Microsoft",
+            "buttonImage": "images/microsoft-logo.png",
+            "iconBackground": "#0078d7",
+            "iconClass": "fa-windows",
             "iconFontColor": "white"
           },
           "useCustomTrustStore": false,
-          "userInfoEndpoint": "https://graph.facebook.com/me?fields=id,name,picture,email,first_name,last_name,locale"
+          "userInfoEndpoint": "https://graph.microsoft.com/v1.0/me"
         }
       ]
     }
