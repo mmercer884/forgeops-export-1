@@ -8,8 +8,8 @@
           "collection": true,
           "name": "Circle of Trust"
         },
-        "description": "Testing Out a circle of trust",
-        "status": "active",
+        "description": "Testing Out a circle of trust Change",
+        "status": "inactive",
         "trustedProviders": []
       }
     },

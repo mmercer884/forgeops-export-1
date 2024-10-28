@@ -123,7 +123,6 @@
         "description": "Forgotten Username Tree",
         "enabled": true,
         "entryNodeId": "5e2a7c95-94af-4b23-8724-deb13853726a",
-        "identityResource": "managed/user",
         "innerTreeOnly": false,
         "nodes": {
           "5e2a7c95-94af-4b23-8724-deb13853726a": {

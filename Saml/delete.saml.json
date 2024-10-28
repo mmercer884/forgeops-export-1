@@ -1,0 +1,430 @@
+{
+  "saml": {
+    "cot": {},
+    "hosted": {
+      "ZGVsZXRl": {
+        "_id": "ZGVsZXRl",
+        "entityId": "delete",
+        "identityProvider": {
+          "advanced": {
+            "ecpConfiguration": {
+              "idpSessionMapper": "com.sun.identity.saml2.plugins.DefaultIDPECPSessionMapper"
+            },
+            "idpAdapter": {
+              "idpAdapterScript": "[Empty]"
+            },
+            "idpFinderImplementation": {},
+            "relayStateUrlList": {},
+            "saeConfiguration": {
+              "idpUrl": "https://golden1-platform.dev.trivir.com/am/idpsaehandler/metaAlias/delete"
+            },
+            "sessionSynchronization": {}
+          },
+          "assertionContent": {
+            "assertionCache": {},
+            "assertionTime": {
+              "effectiveTime": 600,
+              "notBeforeTimeSkew": 600
+            },
+            "authenticationContext": {
+              "authContextItems": [
+                {
+                  "contextReference": "urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport",
+                  "level": 0
+                }
+              ],
+              "authenticationContextMapper": "com.sun.identity.saml2.plugins.DefaultIDPAuthnContextMapper"
+            },
+            "basicAuthentication": {},
+            "nameIdFormat": {
+              "nameIdFormatList": [
+                "urn:oasis:names:tc:SAML:2.0:nameid-format:persistent",
+                "urn:oasis:names:tc:SAML:2.0:nameid-format:transient",
+                "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress",
+                "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified",
+                "urn:oasis:names:tc:SAML:1.1:nameid-format:WindowsDomainQualifiedName",
+                "urn:oasis:names:tc:SAML:2.0:nameid-format:kerberos",
+                "urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName"
+              ],
+              "nameIdValueMap": [
+                {
+                  "binary": false,
+                  "key": "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress",
+                  "value": "mail"
+                }
+              ]
+            },
+            "signingAndEncryption": {
+              "encryption": {},
+              "requestResponseSigning": {},
+              "secretIdAndAlgorithms": {}
+            }
+          },
+          "assertionProcessing": {
+            "accountMapper": {
+              "accountMapper": "com.sun.identity.saml2.plugins.DefaultIDPAccountMapper"
+            },
+            "attributeMapper": {
+              "attributeMapper": "com.sun.identity.saml2.plugins.DefaultIDPAttributeMapper",
+              "attributeMapperScript": "[Empty]"
+            },
+            "localConfiguration": {}
+          },
+          "services": {
+            "assertionIdRequest": [
+              {
+                "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+                "location": "https://golden1-platform.dev.trivir.com/am/AIDReqSoap/IDPRole/metaAlias/delete"
+              },
+              {
+                "binding": "urn:oasis:names:tc:SAML:2.0:bindings:URI",
+                "location": "https://golden1-platform.dev.trivir.com/am/AIDReqUri/IDPRole/metaAlias/delete"
+              }
+            ],
+            "metaAlias": "/delete",
+            "nameIdMapping": [
+              {
+                "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+                "location": "https://golden1-platform.dev.trivir.com/am/NIMSoap/metaAlias/delete"
+              }
+            ],
+            "serviceAttributes": {
+              "artifactResolutionService": [
+                {
+                  "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+                  "location": "https://golden1-platform.dev.trivir.com/am/ArtifactResolver/metaAlias/delete"
+                }
+              ],
+              "nameIdService": [
+                {
+                  "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect",
+                  "location": "https://golden1-platform.dev.trivir.com/am/IDPMniRedirect/metaAlias/delete",
+                  "responseLocation": "https://golden1-platform.dev.trivir.com/am/IDPMniRedirect/metaAlias/delete"
+                },
+                {
+                  "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
+                  "location": "https://golden1-platform.dev.trivir.com/am/IDPMniPOST/metaAlias/delete",
+                  "responseLocation": "https://golden1-platform.dev.trivir.com/am/IDPMniPOST/metaAlias/delete"
+                },
+                {
+                  "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+                  "location": "https://golden1-platform.dev.trivir.com/am/IDPMniSoap/metaAlias/delete"
+                }
+              ],
+              "singleLogoutService": [
+                {
+                  "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect",
+                  "location": "https://golden1-platform.dev.trivir.com/am/IDPSloRedirect/metaAlias/delete",
+                  "responseLocation": "https://golden1-platform.dev.trivir.com/am/IDPSloRedirect/metaAlias/delete"
+                },
+                {
+                  "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
+                  "location": "https://golden1-platform.dev.trivir.com/am/IDPSloPOST/metaAlias/delete",
+                  "responseLocation": "https://golden1-platform.dev.trivir.com/am/IDPSloPOST/metaAlias/delete"
+                },
+                {
+                  "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+                  "location": "https://golden1-platform.dev.trivir.com/am/IDPSloSoap/metaAlias/delete"
+                }
+              ],
+              "singleSignOnService": [
+                {
+                  "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect",
+                  "location": "https://golden1-platform.dev.trivir.com/am/SSORedirect/metaAlias/delete"
+                },
+                {
+                  "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
+                  "location": "https://golden1-platform.dev.trivir.com/am/SSOPOST/metaAlias/delete"
+                },
+                {
+                  "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+                  "location": "https://golden1-platform.dev.trivir.com/am/SSOSoap/metaAlias/delete"
+                }
+              ]
+            }
+          }
+        },
+        "serviceProvider": {
+          "advanced": {
+            "ecpConfiguration": {
+              "ecpRequestIdpListFinderImpl": "com.sun.identity.saml2.plugins.ECPIDPFinder"
+            },
+            "idpProxy": {},
+            "relayStateUrlList": {},
+            "saeConfiguration": {
+              "spUrl": "https://golden1-platform.dev.trivir.com/am/spsaehandler/metaAlias/deleting"
+            }
+          },
+          "assertionContent": {
+            "assertionTimeSkew": 300,
+            "authenticationContext": {
+              "authContextItems": [
+                {
+                  "contextReference": "urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport",
+                  "defaultItem": true,
+                  "level": 0
+                }
+              ],
+              "authenticationComparisonType": "Exact",
+              "authenticationContextMapper": "com.sun.identity.saml2.plugins.DefaultSPAuthnContextMapper",
+              "includeRequestedAuthenticationContext": true
+            },
+            "basicAuthentication": {},
+            "nameIdFormat": {
+              "nameIdFormatList": [
+                "urn:oasis:names:tc:SAML:2.0:nameid-format:persistent",
+                "urn:oasis:names:tc:SAML:2.0:nameid-format:transient",
+                "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress",
+                "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified",
+                "urn:oasis:names:tc:SAML:1.1:nameid-format:WindowsDomainQualifiedName",
+                "urn:oasis:names:tc:SAML:2.0:nameid-format:kerberos",
+                "urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName"
+              ]
+            },
+            "signingAndEncryption": {
+              "encryption": {},
+              "requestResponseSigning": {},
+              "secretIdAndAlgorithms": {}
+            }
+          },
+          "assertionProcessing": {
+            "accountMapping": {
+              "spAccountMapper": "com.sun.identity.saml2.plugins.DefaultSPAccountMapper"
+            },
+            "adapter": {
+              "spAdapterScript": "[Empty]"
+            },
+            "attributeMapper": {
+              "attributeMap": [
+                {
+                  "key": "*",
+                  "value": "*"
+                }
+              ],
+              "attributeMapper": "com.sun.identity.saml2.plugins.DefaultSPAttributeMapper"
+            },
+            "autoFederation": {},
+            "responseArtifactMessageEncoding": {
+              "encoding": "URI"
+            },
+            "url": {}
+          },
+          "services": {
+            "metaAlias": "/deleting",
+            "serviceAttributes": {
+              "assertionConsumerService": [
+                {
+                  "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact",
+                  "index": 0,
+                  "isDefault": true,
+                  "location": "https://golden1-platform.dev.trivir.com/am/Consumer/metaAlias/deleting"
+                },
+                {
+                  "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
+                  "index": 1,
+                  "isDefault": false,
+                  "location": "https://golden1-platform.dev.trivir.com/am/Consumer/metaAlias/deleting"
+                },
+                {
+                  "binding": "urn:oasis:names:tc:SAML:2.0:bindings:PAOS",
+                  "index": 2,
+                  "isDefault": false,
+                  "location": "https://golden1-platform.dev.trivir.com/am/Consumer/ECP/metaAlias/deleting"
+                }
+              ],
+              "nameIdService": [
+                {
+                  "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect",
+                  "location": "https://golden1-platform.dev.trivir.com/am/SPMniRedirect/metaAlias/deleting",
+                  "responseLocation": "https://golden1-platform.dev.trivir.com/am/SPMniRedirect/metaAlias/deleting"
+                },
+                {
+                  "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
+                  "location": "https://golden1-platform.dev.trivir.com/am/SPMniPOST/metaAlias/deleting",
+                  "responseLocation": "https://golden1-platform.dev.trivir.com/am/SPMniPOST/metaAlias/deleting"
+                },
+                {
+                  "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+                  "location": "https://golden1-platform.dev.trivir.com/am/SPMniSoap/metaAlias/deleting",
+                  "responseLocation": "https://golden1-platform.dev.trivir.com/am/SPMniSoap/metaAlias/deleting"
+                }
+              ],
+              "singleLogoutService": [
+                {
+                  "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect",
+                  "location": "https://golden1-platform.dev.trivir.com/am/SPSloRedirect/metaAlias/deleting",
+                  "responseLocation": "https://golden1-platform.dev.trivir.com/am/SPSloRedirect/metaAlias/deleting"
+                },
+                {
+                  "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
+                  "location": "https://golden1-platform.dev.trivir.com/am/SPSloPOST/metaAlias/deleting",
+                  "responseLocation": "https://golden1-platform.dev.trivir.com/am/SPSloPOST/metaAlias/deleting"
+                },
+                {
+                  "binding": "urn:oasis:names:tc:SAML:2.0:bindings:SOAP",
+                  "location": "https://golden1-platform.dev.trivir.com/am/SPSloSoap/metaAlias/deleting"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "metadata": {
+      "ZGVsZXRl": [
+        "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>",
+        "<EntityDescriptor entityID=\"delete\" xmlns=\"urn:oasis:names:tc:SAML:2.0:metadata\" xmlns:query=\"urn:oasis:names:tc:SAML:metadata:ext:query\" xmlns:mdattr=\"urn:oasis:names:tc:SAML:metadata:attribute\" xmlns:saml=\"urn:oasis:names:tc:SAML:2.0:assertion\" xmlns:xenc=\"http://www.w3.org/2001/04/xmlenc#\" xmlns:xenc11=\"http://www.w3.org/2009/xmlenc11#\" xmlns:alg=\"urn:oasis:names:tc:SAML:metadata:algsupport\" xmlns:x509qry=\"urn:oasis:names:tc:SAML:metadata:X509:query\" xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\">",
+        "    <IDPSSODescriptor protocolSupportEnumeration=\"urn:oasis:names:tc:SAML:2.0:protocol\">",
+        "        <KeyDescriptor use=\"signing\">",
+        "            <ds:KeyInfo>",
+        "                <ds:X509Data>",
+        "                    <ds:X509Certificate>",
+        "MIIDZDCCAkygAwIBAgIJAPTMmqU4PWsfMA0GCSqGSIb3DQEBCwUAMGAxCzAJBgNVBAYTAlVLMRAw",
+        "DgYDVQQIEwdCcmlzdG9sMRAwDgYDVQQHEwdCcmlzdG9sMRIwEAYDVQQKEwlGb3JnZVJvY2sxGTAX",
+        "BgNVBAMTEHJzYWp3dHNpZ25pbmdrZXkwHhcNMjQwOTMwMTcwNDE0WhcNMzQwOTI4MTcwNDE0WjBg",
+        "MQswCQYDVQQGEwJVSzEQMA4GA1UECBMHQnJpc3RvbDEQMA4GA1UEBxMHQnJpc3RvbDESMBAGA1UE",
+        "ChMJRm9yZ2VSb2NrMRkwFwYDVQQDExByc2Fqd3RzaWduaW5na2V5MIIBIjANBgkqhkiG9w0BAQEF",
+        "AAOCAQ8AMIIBCgKCAQEAwYXWOnMM5GXBAu/8YuVAEGoYxoGQ1Ppdvr/9rwMzRIC+WzrgGMHJZ4fG",
+        "5MxMix3ZqusojBXkOCoPYZWjgZRufbMBHVJwkEwgBeaRPBZCyxjHjB+6CtVXrTYF/9WEMwErxJVt",
+        "1Kiml9qyeh4gpx4Ag71RBbh/ESbUl09HKLN+lIGCnnLA8XA9Qu1uCP5kXTRc/nNTUt6qt+zLCi+l",
+        "B584Kjniug6+a+5dd8Eh9b9PHO2ESb5UltvLS0gNPr/dvxeX2uOErSrlxZrPtOHt9mlo5UXM78WV",
+        "lpXzNWQTPJYtzpKt+0uchqBRUk8NBHKChTYQ6iRvQlS40t5Qr+oLgOqlFwIDAQABoyEwHzAdBgNV",
+        "HQ4EFgQUv7VO+gTDj2wc+e0OxanXLUCZtqswDQYJKoZIhvcNAQELBQADggEBAEAAnCYe8lFrPrCD",
+        "KknE203svq9wbxoAYxcbsSDxSd5Bb352FiIAyoDxE6kXtlZi1QxyU27xEdPeR6XCSAFGF2QxI6z5",
+        "dMO4GEPgThYmqHVX0QTBAZ0MWQtFExuLUpqOXascS4P6uDsxrbyaV2xx/vCP07KU0dEhMUCOj21S",
+        "ohiZTcbAalTmh0coWWticzjtSfcfFThMMiZYQ7PewEPlwQsc9PpS+lBSJcq23lx69R/Va9SfdC22",
+        "MrBaXXk3G1ldGaRlCgd9BpR51woevHTp6a+yyUQLpk3hqEP8GZqD97W5opcVUCka7HjxsPZF/FoL",
+        "tGyx55X59sCh637ChNHCloI=",
+        "                    </ds:X509Certificate>",
+        "                </ds:X509Data>",
+        "            </ds:KeyInfo>",
+        "        </KeyDescriptor>",
+        "        <KeyDescriptor use=\"encryption\">",
+        "            <ds:KeyInfo>",
+        "                <ds:X509Data>",
+        "                    <ds:X509Certificate>",
+        "MIIDTDCCAjSgAwIBAgIJAOSV5ryPya79MA0GCSqGSIb3DQEBCwUAMFQxCzAJBgNVBAYTAlVLMRAw",
+        "DgYDVQQIEwdCcmlzdG9sMRAwDgYDVQQHEwdCcmlzdG9sMRIwEAYDVQQKEwlGb3JnZVJvY2sxDTAL",
+        "BgNVBAMTBHRlc3QwHhcNMjQwOTMwMTcwNDIxWhcNMzQwOTI4MTcwNDIxWjBUMQswCQYDVQQGEwJV",
+        "SzEQMA4GA1UECBMHQnJpc3RvbDEQMA4GA1UEBxMHQnJpc3RvbDESMBAGA1UEChMJRm9yZ2VSb2Nr",
+        "MQ0wCwYDVQQDEwR0ZXN0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzYPHLAr2b9jb",
+        "TxY1EiLTeqQg2hAjq4wZbzP4C+rZJVztw6Ox2aLBBlkILRQoSeivFOnh/QsaaHAWrfzQV5w9lexT",
+        "JSs9j+bwkKnvTkfnqFKmuFUyZ2U+IeIynnoU1Z9C7hreffcZ7X5u3Fj1sEj4mrAIWnCRhWFLLjEz",
+        "7t/9GhNXy+UH2UmEU6QcAXHykALk1hB0x+/Xr8Vjg9OZhyQxEq/MfW+JwYUY9kojfyBbhAVQ6P7M",
+        "gv12Fi9k/UZRJxBJw+4ULFy4ka9EV/zF5V2jmV2vxPkgr5a+knBf/PyAEf9Aae26WqgrynGfi5rp",
+        "LffvT9sO6kgnpcvguFd7ZL79DQIDAQABoyEwHzAdBgNVHQ4EFgQU+r//8Qmnnv0PNLxed5PpnWe6",
+        "MXswDQYJKoZIhvcNAQELBQADggEBAKVn/or/OEhEyneud3VVT6K5yd300D1qIJrLlrxWAVBGwcG5",
+        "Ch1br8Uucm2mIY60bCIrgjk3aleMpxYbTefIdQahoEly54RPJqEQJEp3PsGSd8+UHDq2OJuek6Rf",
+        "rM1RwtexD/ZDytvhRcnMZGT2diYVBltFy/jf/qoVUHtel0pcBISeXG5CWQCRps4Ev9MKNYJfUHQc",
+        "q2ufrmXOjaosLuXEvQWaW+8mN+vdQMky/thjsfY4CUGmHQduKXeJ8ATDlXvmW7nQthNcTv8+pY+7",
+        "cnR2hDENuv3XCpbGSgJs1gra0rNZDoo47/cIj7oG/eThVGvo+51Ozel8Zv0BmlmLZdg=",
+        "                    </ds:X509Certificate>",
+        "                </ds:X509Data>",
+        "            </ds:KeyInfo>",
+        "            <EncryptionMethod Algorithm=\"http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p\">",
+        "                <ds:DigestMethod Algorithm=\"http://www.w3.org/2001/04/xmlenc#sha256\"/>",
+        "            </EncryptionMethod>",
+        "            <EncryptionMethod Algorithm=\"http://www.w3.org/2001/04/xmlenc#aes128-cbc\">",
+        "                <xenc:KeySize>128</xenc:KeySize>",
+        "            </EncryptionMethod>",
+        "        </KeyDescriptor>",
+        "        <ArtifactResolutionService index=\"0\" Binding=\"urn:oasis:names:tc:SAML:2.0:bindings:SOAP\" Location=\"https://golden1-platform.dev.trivir.com/am/ArtifactResolver/metaAlias/delete\"/>",
+        "        <SingleLogoutService Binding=\"urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect\" Location=\"https://golden1-platform.dev.trivir.com/am/IDPSloRedirect/metaAlias/delete\" ResponseLocation=\"https://golden1-platform.dev.trivir.com/am/IDPSloRedirect/metaAlias/delete\"/>",
+        "        <SingleLogoutService Binding=\"urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST\" Location=\"https://golden1-platform.dev.trivir.com/am/IDPSloPOST/metaAlias/delete\" ResponseLocation=\"https://golden1-platform.dev.trivir.com/am/IDPSloPOST/metaAlias/delete\"/>",
+        "        <SingleLogoutService Binding=\"urn:oasis:names:tc:SAML:2.0:bindings:SOAP\" Location=\"https://golden1-platform.dev.trivir.com/am/IDPSloSoap/metaAlias/delete\"/>",
+        "        <ManageNameIDService Binding=\"urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect\" Location=\"https://golden1-platform.dev.trivir.com/am/IDPMniRedirect/metaAlias/delete\" ResponseLocation=\"https://golden1-platform.dev.trivir.com/am/IDPMniRedirect/metaAlias/delete\"/>",
+        "        <ManageNameIDService Binding=\"urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST\" Location=\"https://golden1-platform.dev.trivir.com/am/IDPMniPOST/metaAlias/delete\" ResponseLocation=\"https://golden1-platform.dev.trivir.com/am/IDPMniPOST/metaAlias/delete\"/>",
+        "        <ManageNameIDService Binding=\"urn:oasis:names:tc:SAML:2.0:bindings:SOAP\" Location=\"https://golden1-platform.dev.trivir.com/am/IDPMniSoap/metaAlias/delete\"/>",
+        "        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>",
+        "        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>",
+        "        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</NameIDFormat>",
+        "        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</NameIDFormat>",
+        "        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:WindowsDomainQualifiedName</NameIDFormat>",
+        "        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:kerberos</NameIDFormat>",
+        "        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName</NameIDFormat>",
+        "        <SingleSignOnService Binding=\"urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect\" Location=\"https://golden1-platform.dev.trivir.com/am/SSORedirect/metaAlias/delete\"/>",
+        "        <SingleSignOnService Binding=\"urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST\" Location=\"https://golden1-platform.dev.trivir.com/am/SSOPOST/metaAlias/delete\"/>",
+        "        <SingleSignOnService Binding=\"urn:oasis:names:tc:SAML:2.0:bindings:SOAP\" Location=\"https://golden1-platform.dev.trivir.com/am/SSOSoap/metaAlias/delete\"/>",
+        "        <NameIDMappingService Binding=\"urn:oasis:names:tc:SAML:2.0:bindings:SOAP\" Location=\"https://golden1-platform.dev.trivir.com/am/NIMSoap/metaAlias/delete\"/>",
+        "        <AssertionIDRequestService Binding=\"urn:oasis:names:tc:SAML:2.0:bindings:SOAP\" Location=\"https://golden1-platform.dev.trivir.com/am/AIDReqSoap/IDPRole/metaAlias/delete\"/>",
+        "        <AssertionIDRequestService Binding=\"urn:oasis:names:tc:SAML:2.0:bindings:URI\" Location=\"https://golden1-platform.dev.trivir.com/am/AIDReqUri/IDPRole/metaAlias/delete\"/>",
+        "    </IDPSSODescriptor>",
+        "    <SPSSODescriptor protocolSupportEnumeration=\"urn:oasis:names:tc:SAML:2.0:protocol\">",
+        "        <KeyDescriptor use=\"signing\">",
+        "            <ds:KeyInfo>",
+        "                <ds:X509Data>",
+        "                    <ds:X509Certificate>",
+        "MIIDZDCCAkygAwIBAgIJAPTMmqU4PWsfMA0GCSqGSIb3DQEBCwUAMGAxCzAJBgNVBAYTAlVLMRAw",
+        "DgYDVQQIEwdCcmlzdG9sMRAwDgYDVQQHEwdCcmlzdG9sMRIwEAYDVQQKEwlGb3JnZVJvY2sxGTAX",
+        "BgNVBAMTEHJzYWp3dHNpZ25pbmdrZXkwHhcNMjQwOTMwMTcwNDE0WhcNMzQwOTI4MTcwNDE0WjBg",
+        "MQswCQYDVQQGEwJVSzEQMA4GA1UECBMHQnJpc3RvbDEQMA4GA1UEBxMHQnJpc3RvbDESMBAGA1UE",
+        "ChMJRm9yZ2VSb2NrMRkwFwYDVQQDExByc2Fqd3RzaWduaW5na2V5MIIBIjANBgkqhkiG9w0BAQEF",
+        "AAOCAQ8AMIIBCgKCAQEAwYXWOnMM5GXBAu/8YuVAEGoYxoGQ1Ppdvr/9rwMzRIC+WzrgGMHJZ4fG",
+        "5MxMix3ZqusojBXkOCoPYZWjgZRufbMBHVJwkEwgBeaRPBZCyxjHjB+6CtVXrTYF/9WEMwErxJVt",
+        "1Kiml9qyeh4gpx4Ag71RBbh/ESbUl09HKLN+lIGCnnLA8XA9Qu1uCP5kXTRc/nNTUt6qt+zLCi+l",
+        "B584Kjniug6+a+5dd8Eh9b9PHO2ESb5UltvLS0gNPr/dvxeX2uOErSrlxZrPtOHt9mlo5UXM78WV",
+        "lpXzNWQTPJYtzpKt+0uchqBRUk8NBHKChTYQ6iRvQlS40t5Qr+oLgOqlFwIDAQABoyEwHzAdBgNV",
+        "HQ4EFgQUv7VO+gTDj2wc+e0OxanXLUCZtqswDQYJKoZIhvcNAQELBQADggEBAEAAnCYe8lFrPrCD",
+        "KknE203svq9wbxoAYxcbsSDxSd5Bb352FiIAyoDxE6kXtlZi1QxyU27xEdPeR6XCSAFGF2QxI6z5",
+        "dMO4GEPgThYmqHVX0QTBAZ0MWQtFExuLUpqOXascS4P6uDsxrbyaV2xx/vCP07KU0dEhMUCOj21S",
+        "ohiZTcbAalTmh0coWWticzjtSfcfFThMMiZYQ7PewEPlwQsc9PpS+lBSJcq23lx69R/Va9SfdC22",
+        "MrBaXXk3G1ldGaRlCgd9BpR51woevHTp6a+yyUQLpk3hqEP8GZqD97W5opcVUCka7HjxsPZF/FoL",
+        "tGyx55X59sCh637ChNHCloI=",
+        "                    </ds:X509Certificate>",
+        "                </ds:X509Data>",
+        "            </ds:KeyInfo>",
+        "        </KeyDescriptor>",
+        "        <KeyDescriptor use=\"encryption\">",
+        "            <ds:KeyInfo>",
+        "                <ds:X509Data>",
+        "                    <ds:X509Certificate>",
+        "MIIDTDCCAjSgAwIBAgIJAOSV5ryPya79MA0GCSqGSIb3DQEBCwUAMFQxCzAJBgNVBAYTAlVLMRAw",
+        "DgYDVQQIEwdCcmlzdG9sMRAwDgYDVQQHEwdCcmlzdG9sMRIwEAYDVQQKEwlGb3JnZVJvY2sxDTAL",
+        "BgNVBAMTBHRlc3QwHhcNMjQwOTMwMTcwNDIxWhcNMzQwOTI4MTcwNDIxWjBUMQswCQYDVQQGEwJV",
+        "SzEQMA4GA1UECBMHQnJpc3RvbDEQMA4GA1UEBxMHQnJpc3RvbDESMBAGA1UEChMJRm9yZ2VSb2Nr",
+        "MQ0wCwYDVQQDEwR0ZXN0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzYPHLAr2b9jb",
+        "TxY1EiLTeqQg2hAjq4wZbzP4C+rZJVztw6Ox2aLBBlkILRQoSeivFOnh/QsaaHAWrfzQV5w9lexT",
+        "JSs9j+bwkKnvTkfnqFKmuFUyZ2U+IeIynnoU1Z9C7hreffcZ7X5u3Fj1sEj4mrAIWnCRhWFLLjEz",
+        "7t/9GhNXy+UH2UmEU6QcAXHykALk1hB0x+/Xr8Vjg9OZhyQxEq/MfW+JwYUY9kojfyBbhAVQ6P7M",
+        "gv12Fi9k/UZRJxBJw+4ULFy4ka9EV/zF5V2jmV2vxPkgr5a+knBf/PyAEf9Aae26WqgrynGfi5rp",
+        "LffvT9sO6kgnpcvguFd7ZL79DQIDAQABoyEwHzAdBgNVHQ4EFgQU+r//8Qmnnv0PNLxed5PpnWe6",
+        "MXswDQYJKoZIhvcNAQELBQADggEBAKVn/or/OEhEyneud3VVT6K5yd300D1qIJrLlrxWAVBGwcG5",
+        "Ch1br8Uucm2mIY60bCIrgjk3aleMpxYbTefIdQahoEly54RPJqEQJEp3PsGSd8+UHDq2OJuek6Rf",
+        "rM1RwtexD/ZDytvhRcnMZGT2diYVBltFy/jf/qoVUHtel0pcBISeXG5CWQCRps4Ev9MKNYJfUHQc",
+        "q2ufrmXOjaosLuXEvQWaW+8mN+vdQMky/thjsfY4CUGmHQduKXeJ8ATDlXvmW7nQthNcTv8+pY+7",
+        "cnR2hDENuv3XCpbGSgJs1gra0rNZDoo47/cIj7oG/eThVGvo+51Ozel8Zv0BmlmLZdg=",
+        "                    </ds:X509Certificate>",
+        "                </ds:X509Data>",
+        "            </ds:KeyInfo>",
+        "            <EncryptionMethod Algorithm=\"http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p\">",
+        "                <ds:DigestMethod Algorithm=\"http://www.w3.org/2001/04/xmlenc#sha256\"/>",
+        "            </EncryptionMethod>",
+        "            <EncryptionMethod Algorithm=\"http://www.w3.org/2001/04/xmlenc#aes128-cbc\">",
+        "                <xenc:KeySize>128</xenc:KeySize>",
+        "            </EncryptionMethod>",
+        "        </KeyDescriptor>",
+        "        <SingleLogoutService Binding=\"urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect\" Location=\"https://golden1-platform.dev.trivir.com/am/SPSloRedirect/metaAlias/deleting\" ResponseLocation=\"https://golden1-platform.dev.trivir.com/am/SPSloRedirect/metaAlias/deleting\"/>",
+        "        <SingleLogoutService Binding=\"urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST\" Location=\"https://golden1-platform.dev.trivir.com/am/SPSloPOST/metaAlias/deleting\" ResponseLocation=\"https://golden1-platform.dev.trivir.com/am/SPSloPOST/metaAlias/deleting\"/>",
+        "        <SingleLogoutService Binding=\"urn:oasis:names:tc:SAML:2.0:bindings:SOAP\" Location=\"https://golden1-platform.dev.trivir.com/am/SPSloSoap/metaAlias/deleting\"/>",
+        "        <ManageNameIDService Binding=\"urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect\" Location=\"https://golden1-platform.dev.trivir.com/am/SPMniRedirect/metaAlias/deleting\" ResponseLocation=\"https://golden1-platform.dev.trivir.com/am/SPMniRedirect/metaAlias/deleting\"/>",
+        "        <ManageNameIDService Binding=\"urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST\" Location=\"https://golden1-platform.dev.trivir.com/am/SPMniPOST/metaAlias/deleting\" ResponseLocation=\"https://golden1-platform.dev.trivir.com/am/SPMniPOST/metaAlias/deleting\"/>",
+        "        <ManageNameIDService Binding=\"urn:oasis:names:tc:SAML:2.0:bindings:SOAP\" Location=\"https://golden1-platform.dev.trivir.com/am/SPMniSoap/metaAlias/deleting\" ResponseLocation=\"https://golden1-platform.dev.trivir.com/am/SPMniSoap/metaAlias/deleting\"/>",
+        "        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>",
+        "        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>",
+        "        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</NameIDFormat>",
+        "        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</NameIDFormat>",
+        "        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:WindowsDomainQualifiedName</NameIDFormat>",
+        "        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:kerberos</NameIDFormat>",
+        "        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName</NameIDFormat>",
+        "        <AssertionConsumerService index=\"0\" isDefault=\"true\" Binding=\"urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact\" Location=\"https://golden1-platform.dev.trivir.com/am/Consumer/metaAlias/deleting\"/>",
+        "        <AssertionConsumerService index=\"1\" isDefault=\"false\" Binding=\"urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST\" Location=\"https://golden1-platform.dev.trivir.com/am/Consumer/metaAlias/deleting\"/>",
+        "        <AssertionConsumerService index=\"2\" isDefault=\"false\" Binding=\"urn:oasis:names:tc:SAML:2.0:bindings:PAOS\" Location=\"https://golden1-platform.dev.trivir.com/am/Consumer/ECP/metaAlias/deleting\"/>",
+        "    </SPSSODescriptor>",
+        "</EntityDescriptor>",
+        "",
+        ""
+      ]
+    },
+    "remote": {}
+  }
+}

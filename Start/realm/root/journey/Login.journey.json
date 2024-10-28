@@ -132,7 +132,6 @@
         "description": "Platform Login Tree",
         "enabled": true,
         "entryNodeId": "a12bc72f-ad97-4f1e-a789-a1fa3dd566c8",
-        "identityResource": "managed/user",
         "innerTreeOnly": false,
         "nodes": {
           "2998c1c9-f4c8-4a00-b2c6-3426783ee49d": {

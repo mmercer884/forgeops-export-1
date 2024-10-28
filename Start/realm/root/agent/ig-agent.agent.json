@@ -12,7 +12,8 @@
         "http://am:80/am/cdcservlet"
       ],
       "igTokenIntrospection": "None",
-      "status": "Active"
+      "status": "Active",
+      "userpassword": null
     }
   }
 }

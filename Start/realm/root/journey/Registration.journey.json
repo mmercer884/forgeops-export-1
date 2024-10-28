@@ -185,7 +185,6 @@
         "description": "Platform Registration Tree",
         "enabled": true,
         "entryNodeId": "0c091c49-f3af-48fb-ac6f-07fba0499dd6",
-        "identityResource": "managed/user",
         "innerTreeOnly": false,
         "nodes": {
           "0c091c49-f3af-48fb-ac6f-07fba0499dd6": {

@@ -16,14 +16,6 @@
       },
       "name": "user",
       "notifications": {},
-      "onCreate": {
-        "globals": {
-          "_humanReadableEventDescription_": "test",
-          "_humanReadableEventName_": "Test Event hoo"
-        },
-        "source": "test = true",
-        "type": "text/javascript"
-      },
       "schema": {
         "$schema": "http://json-schema.org/draft-03/schema",
         "icon": "fa-user",
@@ -1684,14 +1676,6 @@
     },
     {
       "name": "organization",
-      "postCreate": {
-        "globals": {
-          "_humanReadableEventDescription_": "change",
-          "_humanReadableEventName_": "change event hook"
-        },
-        "source": "test = 'test'",
-        "type": "text/javascript"
-      },
       "schema": {
         "$schema": "http://forgerock.org/json-schema#",
         "description": "An organization or tenant, whose resources are managed by organizational admins.",
