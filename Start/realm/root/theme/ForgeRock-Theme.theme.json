@@ -1,7 +1,7 @@
 {
   "theme": {
-    "fe88ac2d-020e-49be-830f-e2fcc95ab238": {
-      "_id": "fe88ac2d-020e-49be-830f-e2fcc95ab238",
+    "a4d074ca-0f04-4213-aa75-d7bd14abe939": {
+      "_id": "a4d074ca-0f04-4213-aa75-d7bd14abe939",
       "accountFooter": "<div class=\"d-flex justify-content-center py-4 w-100\"><span class=\"pr-1\">© 2022</span>\n<a href=\"#\" target=\"_blank\" class=\"text-body\">My Company, Inc</a><a href=\"#\" target=\"_blank\" style=\"color: #0000ee\" class=\"pl-3 text-body\">Privacy Policy</a><a href=\"#\" target=\"_blank\" style=\"color: #0000ee\" class=\"pl-3 text-body\">Terms & Conditions</a></div>",
       "accountFooterEnabled": false,
       "accountPageSections": {

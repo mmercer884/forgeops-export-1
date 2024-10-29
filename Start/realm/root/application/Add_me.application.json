@@ -1,7 +1,7 @@
 {
   "application": {
-    "AddService": {
-      "_id": "AddService",
+    "Add_me": {
+      "_id": "Add_me",
       "_provider": {
         "_id": "",
         "_type": {
@@ -418,9 +418,7 @@
         "clientUri": [],
         "contacts": [],
         "customProperties": [],
-        "descriptions": [
-          "change"
-        ],
+        "descriptions": [],
         "grantTypes": [
           "client_credentials"
         ],
@@ -449,7 +447,7 @@
         "accessTokenLifetime": 3600,
         "authorizationCodeLifetime": 120,
         "clientName": [
-          "Test Add Service"
+          "Additionally"
         ],
         "clientType": "Confidential",
         "defaultScopes": [],
@@ -458,8 +456,7 @@
         "refreshTokenLifetime": 604800,
         "scopes": [],
         "secretLabelIdentifier": null,
-        "status": "Inactive",
-        "userpassword": null
+        "status": "Active"
       },
       "coreOpenIDClientConfig": {
         "backchannel_logout_session_required": false,

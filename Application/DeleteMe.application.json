@@ -1,7 +1,7 @@
 {
   "application": {
-    "AddService": {
-      "_id": "AddService",
+    "DeleteMe": {
+      "_id": "DeleteMe",
       "_provider": {
         "_id": "",
         "_type": {
@@ -418,11 +418,10 @@
         "clientUri": [],
         "contacts": [],
         "customProperties": [],
-        "descriptions": [
-          "change"
-        ],
+        "descriptions": [],
         "grantTypes": [
-          "client_credentials"
+          "authorization_code",
+          "refresh_token"
         ],
         "isConsentImplied": true,
         "javascriptOrigins": [],
@@ -434,7 +433,9 @@
         "requestUris": [],
         "require_pushed_authorization_requests": false,
         "responseTypes": [
-          "token"
+          "code",
+          "token",
+          "id_token"
         ],
         "sectorIdentifierUri": null,
         "softwareIdentity": null,
@@ -449,17 +450,18 @@
         "accessTokenLifetime": 3600,
         "authorizationCodeLifetime": 120,
         "clientName": [
-          "Test Add Service"
+          "delete"
         ],
-        "clientType": "Confidential",
+        "clientType": "Public",
         "defaultScopes": [],
         "loopbackInterfaceRedirection": false,
         "redirectionUris": [],
         "refreshTokenLifetime": 604800,
-        "scopes": [],
+        "scopes": [
+          "openid"
+        ],
         "secretLabelIdentifier": null,
-        "status": "Inactive",
-        "userpassword": null
+        "status": "Active"
       },
       "coreOpenIDClientConfig": {
         "backchannel_logout_session_required": false,
