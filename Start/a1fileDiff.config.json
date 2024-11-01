@@ -1,0 +1,41 @@
+{
+  "added": [
+    "global/idm/endpoint/Add_endpoint.json",
+    "global/idm/endpoint/Custom_Endpoint.json",
+    "global/idm/sync.json",
+    "global/sync/managedAssignment_managedUser.sync.json",
+    "global/sync/managedRole_managedAssignment.sync.json",
+    "global/sync/sync.json",
+    "realm/root/idp/fbooo.idp.json",
+    "realm/root/idp/goo.idp.json",
+    "realm/root/service/email.service.json",
+    "realm/root/service/globalization.service.json",
+    "realm/root-alpha/authentication/root-alpha.authentication.settings.json",
+    "realm/root-alpha/journey/ForgottenUsername.journey.json",
+    "realm/root-alpha/journey/Login.journey.json",
+    "realm/root-alpha/journey/ProgressiveProfile.journey.json",
+    "realm/root-alpha/journey/Registration.journey.json",
+    "realm/root-alpha/journey/ResetPassword.journey.json",
+    "realm/root-alpha/journey/UpdatePassword.journey.json",
+    "realm/root-alpha/resourcetype/OAuth2-Scope.resourcetype.json",
+    "realm/root-alpha/resourcetype/URL.resourcetype.json",
+    "realm/root-alpha/service/DataStoreService.service.json",
+    "realm/root-alpha/service/SocialIdentityProviders.service.json",
+    "realm/root-alpha/service/id-repositories.service.json",
+    "realm/root-alpha/service/policyconfiguration.service.json"
+  ],
+  "changed": [
+    "realm/root/authentication/root.authentication.settings.json",
+    "realm/root/service/SocialIdentityProviders.service.json",
+    "realm/root/service/id-repositories.service.json"
+  ],
+  "deleted": [],
+  "meta": {
+    "exportDate": "2024-10-30T21:28:50.488Z",
+    "exportTool": "frodo",
+    "exportToolVersion": "v2.2.0 [v20.11.1]",
+    "exportedBy": "amadmin",
+    "origin": "https://golden1-platform.dev.trivir.com/am",
+    "originAmVersion": "7.5.0"
+  }
+}
